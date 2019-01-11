@@ -1,0 +1,36 @@
+title: neuron's blog               # 网站名字
+url: https://doublesand.github.io  # 博客网址 https://example
+baseurl: /neuron                   # 你的博客目录  
+description: Describe your website in a paragraph to optimize search
+
+# 个人信息
+author: neuron                     # 姓名
+tagline: Full Stack Developer      # 称号
+avatar: avatar.jpg                 # 头像
+about-description: Describe yourself in a paragraph
+
+email: doublesand@163.com          # 邮箱
+github: doublesand                 # github账号
+linkedin: doublesand               # 领英账号
+
+analytics: UA-131806880-1          # 谷歌分析
+disqus: doublesand                 # disqus账号
+
+permalink: none
+paginate: 5
+
+# 插件配置
+plugins:
+  - jekyll-paginate                # 分页功能
+  - jekyll-seo-tag                 # 搜索优化           
+  - jekyll-sitemap                 # 网站地图
+  - jekyll-feed                    # 订阅功能
+
+defaults:
+  -
+    scope:
+      path: "_posts"               # 路径
+      type: "posts"                # 类型
+    values:
+      layout: "post"               # 默认布局
+      tag: "jottings"              # 默认标签							
