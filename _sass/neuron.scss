@@ -14,37 +14,41 @@ $line-height:      1.5 ;
 $font-weight:      400 ;
 $font-weight-bold: 700 ;
 
-// Page colors
-$body-background: $gray-100;
-$section-about-background: $white;
-$contact-list-color: $dark;
-$base-color: $gray-400;
-$menu-color-link: $gray-200;
-$menu-background-link-hover: $white;
-$menu-color-link-hover: $gray-300;
-$color-link: $blue;
-$page-title-color: $gray-200;
-$about-tagline-color: $gray-300;
-$about-tagline-border: $gray-200;
-$border-color: $white;
+// base colors
+$color:                            $gray-400;
+$color-background:                 $gray-100;
+$color-link:                       $blue    ;
+$color-border:                     $white   ;
+$color-blockquote-border:          $gray-300;
 
-// Blog colors
-$post-box-background: $white;
-$post-link-color: $gray-500;
-$rss-subscribe-color: $white;
-$rss-subscribe-hover: $gray-200;
-$article-list-color: $gray-500;
-$post-item-border: $gray-200;
+// page colors
+$color-page-container-background:  $white   ;
+$color-page-title:                 $gray-200;
 
 // Post colors
-$post-container-background: $white;
-$article-border: $gray-100;
+$color-post-container-background:  $white   ;
+$color-article-border:             $gray-100;
 
-// Base
-$blockquote-border: $gray-300;
+// about colors
+$color-about-background:           $white   ;
+$color-contact-list:               $dark    ;
+$color-about-tagline:              $gray-300;
+$color-about-tagline-border:       $gray-200;
+
+// header colors
+$color-menu-link:                  $gray-200;
+$color-menu-background-link-hover: $white   ;
+$color-menu-link-hover:            $gray-300;
+
+// Blog colors
+$color-item-link:                  $gray-500;
+$color-rss-subscribe:              $white   ;
+$color-rss-subscribe-hover:        $gray-200;
+$color-item-footer-color:          $gray-500;
+$post-item-border:                 $gray-200;
 
 // Syntax
-$highlight-background: $gray-100;
+$color-highlight-background:       $gray-100;
 
 // tools
 @import "tools/normalize";
