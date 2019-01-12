@@ -1,22 +1,39 @@
 @media screen and (min-width: 500px) {
     html {
-        font-size:calc(15px + 7 * ((100vw - 500px) / 900));
+      font-size:calc(15px + 7 * ((100vw - 500px) / 900));
     }
 }
 
 @media screen and (min-width: 1400px) {
 	html {
-			font-size: 22px;
+		font-size: 22px;
 	}
 }
 
 @media (max-width: 480px) {
 	.page-heading .page-title {
-			font-size: 3.5rem;
-			line-height: 1.2;
+		font-size: 3.5rem;
+		line-height: 1.2;
 	}
 
 	.contact-list li a {
 		font-size: 0.7rem;
+	}
+	
+	.page-container {
+		margin: 0;
+		padding: 1rem;
+	}
+	
+	.post-container {
+		margin: 0;
+		padding: 0;
+		.post-content {
+			padding: 1.5rem 1rem;
+		}
+	}
+	
+	iframe{
+		height: 300px;
 	}
 }

@@ -2,11 +2,10 @@
 $dark:     #181818;
 $gray-500: #272727;
 $gray-400: #323232;
-$gray-300: #6F6F6F;
+$gray-300: #6F6F6F; 
 $gray-200: #c7c7c7;
 $gray-100: #f3f3f3;
 $white:    #ffffff;
-$blue:     #33ccff;
 
 // Font
 $font-size:        15px;
@@ -17,7 +16,7 @@ $font-weight-bold: 700 ;
 // base colors
 $color:                            $gray-400;
 $color-background:                 $gray-100;
-$color-link:                       $blue    ;
+$color-link:                       $gray-300;
 $color-border:                     $white   ;
 $color-blockquote-border:          $gray-300;
 
@@ -28,6 +27,7 @@ $color-page-title:                 $gray-200;
 // Post colors
 $color-post-container-background:  $white   ;
 $color-article-border:             $gray-100;
+$color-post-link:                  $gray-400;
 
 // about colors
 $color-about-background:           $white   ;
@@ -44,8 +44,8 @@ $color-menu-link-hover:            $gray-300;
 $color-item-link:                  $gray-500;
 $color-rss-subscribe:              $white   ;
 $color-rss-subscribe-hover:        $gray-200;
-$color-item-footer-color:          $gray-500;
-$post-item-border:                 $gray-200;
+$color-item-footer:                $gray-500;
+$color-post-item-border:           $gray-200;
 
 // Syntax
 $color-highlight-background:       $gray-100;
@@ -60,6 +60,6 @@ $color-highlight-background:       $gray-100;
 @import "modules/blog";
 @import "modules/footer";
 @import "modules/header";
-@import "modules/media";
 @import "modules/post";
-
+@import "modules/tags";
+@import "modules/media";

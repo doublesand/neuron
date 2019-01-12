@@ -13,7 +13,7 @@ html {
 body {
   font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
   -webkit-font-smoothing: antialiased;
-  background: $background;
+  background: $color-background;
   color: $color;
 }
 
@@ -23,9 +23,22 @@ h3,
 h4,
 h5,
 h6 {
+	font-family: simsun;
   margin: 0;
   line-height: $line-height;
   text-rendering: optimizeLegibility;
+}
+
+h2{
+	font-size: 1.8rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+h4 {
+	font-size: 1.3rem;
 }
 
 a {
@@ -39,17 +52,44 @@ a {
 }
 
 blockquote {
-  border-left: 5px solid $blockquote-border;
+  border-left: 5px solid $color-blockquote-border;
   font-style: italic;
   padding-left: 1.1rem;
   margin-left: 1.2rem;
   color: $gray-300;
 }
 
-.divider::after {
-  content: "-";
-  display: inline-block;
-  position: relative;
+img {
+	max-width: 100%;
+}
+
+// Tables 
+table {
+  margin-bottom: 1rem;
+  width: 100%;
+  border: 1px solid #e5e5e5;
+  border-collapse: collapse;
+}
+td,
+th {
+  padding: .25rem .5rem;
+  border: 1px solid #e5e5e5;
+}
+tbody tr:nth-child(odd) td,
+tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9;
+}
+
+iframe{
+	width: 100%;
+	height: 600px;
+}
+
+// layout 
+
+.container {
+	margin: 0;
+	padding: 0;
 }
 
 .wrapper {
@@ -57,15 +97,33 @@ blockquote {
   margin: 0 auto 2rem;
 }
 
+
+.divider::after {
+  content: "-";
+  display: inline-block;
+  position: relative;
+}
+
 .page-heading {
   padding-bottom: 3rem;
 
   .page-title {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
     text-transform: uppercase;
     font-size: 5rem;
     line-height: 1.1;
     text-align: center;
-    color: $page-title-color;
+    color: $color-page-title;
   }
 }
+
+.page-container {
+  margin: 0 1rem;
+  padding: 2rem;
+  background-color: $color-page-container-background;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+// mathjax
+.MathJax_Display{overflow-x:auto;overflow-y:hidden;}
+.MathJax{outline:0;}
