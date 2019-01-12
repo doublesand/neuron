@@ -11,18 +11,18 @@
     .logo-link {
       display: inline-block;
       text-decoration: none;
-      color: $menu-color-link;
+      color: $color-menu-link;
       text-transform: uppercase;
       line-height: 1.1;
       font-weight: $font-weight-bold;
-      border-bottom: 3px solid $border-color;
-      border-top: 3px solid $border-color;
+      border-bottom: 3px solid $color-border;
+      border-top: 3px solid $color-border;
       padding: 1rem 1.5rem;
       transition: ease-in-out .3s;
 
       &:hover {
-        background: $menu-background-link-hover;
-        color: $menu-color-link-hover;
+        background: $color-menu-background-link-hover;
+        color: $color-menu-link-hover;
       }
     }
   }
@@ -41,12 +41,12 @@
         font-weight: $font-weight-bold;
         text-transform: uppercase;
         padding: 1rem 1.5rem;
-        color: $menu-color-link;
+        color: $color-menu-link;
         transition: ease-in-out .3s;
 
         &:hover {
-          background-color: $menu-background-link-hover;
-          color: $menu-color-link-hover;
+          background-color: $color-menu-background-link-hover;
+          color: $color-menu-link-hover;
         }
       }
     }
