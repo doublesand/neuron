@@ -7,7 +7,7 @@
 
 .tags {
   margin: 0;
-	padding-left: 0;
+  padding-left: 0;
   padding-right: 10px;
   li {
     display: inline-block;
@@ -18,13 +18,13 @@
       color: $gray-300;
       display: inline-block;
       padding: 5px 10px;
-			border-radius: 5px;
+      border-radius: 5px;
       border: 1px solid $gray-300;
       background-color: $gray-100;
       transition: all .3s;
       &:hover {
         background-color: $gray-300;
-				color: $gray-100;
+        color: $gray-100;
       }
     }
   }

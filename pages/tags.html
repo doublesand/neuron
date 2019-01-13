@@ -8,23 +8,23 @@ permalink: /tags/
 {% assign tag_words = site_tags | split:',' | sort %}
 
 <section class="blog-tags">
-	<ul class="tags">
+  <ul class="tags">
 <!--  循环遍历标签产生标签云，每个标签附带文章个数 -->
-	{% for this_word in tag_words %}
-		<li ><a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
-	{% endfor %}
-	</ul>
+  {% for this_word in tag_words %}
+    <li ><a href="#{{ this_word | cgi_escape }}" class="tag">{{ this_word }} <span>({{ site.tags[this_word].size }})</span></a></li>
+  {% endfor %}
+  </ul>
 <!-- 遍历所有标签并生成标签标题 -->
-	{% for this_word in tag_words %}
-	  <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
+  {% for this_word in tag_words %}
+    <h2 id="{{ this_word | cgi_escape }}">{{ this_word }}</h2>
 <!--  罗列该标签下的所有文章 -->
-		{% for post in site.tags[this_word] %}
-		  {% if post.title != null %}
-		  <div class="tag-list">
-			  <span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
-			  <small><span>| {{ post.date | date_to_string }}</span></small>
-		  </div>
-		  {% endif %}
-		{% endfor %}
-	{% endfor %}
+    {% for post in site.tags[this_word] %}
+      {% if post.title != null %}
+      <div class="tag-list">
+        <span><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></span>
+        <small><span>| {{ post.date | date_to_string }}</span></small>
+      </div>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
 </section>

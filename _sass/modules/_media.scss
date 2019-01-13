@@ -5,31 +5,31 @@
 }
 
 @media screen and (min-width: 1400px) {
-	html {
-		font-size: 22px;
-	}
+  html {
+    font-size: 22px;
+  }
 }
 
 @media (max-width: 480px) {
-	.page-heading .page-title {
-		font-size: 3.5rem;
-		line-height: 1.2;
-	}
+  .page-heading .page-title {
+    font-size: 3.5rem;
+    line-height: 1.2;
+  }
 
-	.contact-list li a {
-		font-size: 0.7rem;
-	}
-	
-	.page-container {
-		margin: 0;
-		padding: 1rem;
-	}
-	
-	.post-container {
-		margin: 0;
-		padding: 0;
-		.post-content {
-			padding: 1.5rem 1rem;
-		}
-	}
+  .contact-list li a {
+    font-size: 0.7rem;
+  }
+  
+  .page-container {
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  .post-container {
+    margin: 0;
+    padding: 0;
+    .post-content {
+      padding: 1.5rem 1rem;
+    }
+  }
 }

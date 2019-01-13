@@ -4,28 +4,28 @@ title: about me
 ---
 
 <div class="about">
-	<div class="face-container">
-		<img class="face" src="{{ site.baseurl }}/assets/img/{{ site.avatar }}" alt="{{ site.author }}">
-	</div>
-	<h2 class="tagline"> {{ site.tagline }} </h2>
-	<div class="about-description">
-		<p>{{ site.about-description }}</p>
-	</div>
-	<div class="contact-container">
-		<ul class="contact-list">
-			
-			{% if site.email %}
-				<li class="email"><a href="mailto:{{site.email}}"><i class="fa fa-envelope-o"></i> {{site.email}}</a></li>
-			{% endif %}
+  <div class="face-container">
+    <img class="face" src="{{ site.baseurl }}/assets/img/{{ site.avatar }}" alt="{{ site.author }}">
+  </div>
+  <h2 class="tagline"> {{ site.tagline }} </h2>
+  <div class="about-description">
+    <p>{{ site.about-description }}</p>
+  </div>
+  <div class="contact-container">
+    <ul class="contact-list">
+      
+      {% if site.email %}
+        <li class="email"><a href="mailto:{{site.email}}"><i class="fa fa-envelope-o"></i> {{site.email}}</a></li>
+      {% endif %}
 
-			{% if site.linkedin %}
-				<li class="linkedin"><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i> linkedin.com/in/{{site.linkedin}}</a></li>
-			{% endif %}
+      {% if site.linkedin %}
+        <li class="linkedin"><a href="https://in.linkedin.com/in/{{site.linkedin}}" target="_blank"><i class="fa fa-linkedin"></i> linkedin.com/in/{{site.linkedin}}</a></li>
+      {% endif %}
 
-			{% if site.github %}
-				<li class="github"><a href="https://github.com/{{site.github}}" target="_blank"><i class="fa fa-github"></i> github.com/{{site.github}}</a></li>
-			{% endif %}
+      {% if site.github %}
+        <li class="github"><a href="https://github.com/{{site.github}}" target="_blank"><i class="fa fa-github"></i> github.com/{{site.github}}</a></li>
+      {% endif %}
 
-		</ul>
-	</div>
+    </ul>
+  </div>
 </div>
